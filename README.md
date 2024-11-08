@@ -68,7 +68,7 @@ Welcome to the **Spaceship Service API**! This RESTful API allows you to manage 
 
 4. **Test the API**
 
-    Las credenciales para hacer login y probar la API son:
+    The credentials to log in and test the API are:
 
     ```bash
     username: admin
