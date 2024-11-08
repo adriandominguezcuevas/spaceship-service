@@ -1,0 +1,28 @@
+spring:
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  cache:
+    cache-names: spaceships
+    caffeine:
+      spec: maximumSize=500,expireAfterAccess=600s
+  application:
+    name: spaceship-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:db/changelog/liquibase-changelog.yml
+    enabled: true
+logging:
+  level:
+    root: INFO
+    com.w2m.spaceship: INFO
+    com.w2m.spaceship.aspect: WARN
+jwt:
+  secret: 'your-secret-key-of-at-least-256-bits-length-which-is-at-least-32-characters-long'
+  expiration-ms: 3600000

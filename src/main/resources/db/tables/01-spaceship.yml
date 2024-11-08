@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: spaceship-service
+      changes:
+        - createTable:
+            tableName: spaceship
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: model
+                  type: VARCHAR(255)
+              - column:
+                  name: planet_origin
+                  type: VARCHAR(255)
+              - column:
+                  name: planet_destination
+                  type: VARCHAR(255)
+              - column:
+                  name: fuel_tank
+                  type: DECIMAL(10, 2)
+              - column:
+                  name: fuel_tank_level
+                  type: DECIMAL(10, 2)
+              - column:
+                  name: status
+                  type: VARCHAR(255)
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP

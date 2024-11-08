@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+        file: db/tables/01-spaceship.yml
+  - include:
+        file: db/tables/02-users.yml
+  - include:
+        file: db/tables/03-role.yml
+  - include:
+        file: db/tables/04-user-role.yml
