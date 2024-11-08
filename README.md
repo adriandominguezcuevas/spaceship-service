@@ -65,3 +65,13 @@ Welcome to the **Spaceship Service API**! This RESTful API allows you to manage 
 
     Open your browser and navigate to `http://localhost:8080/swagger-ui/index.html`.
 
+
+4. **Test the API**
+
+    Las credenciales para hacer login y probar la API son:
+
+    ```bash
+    username: admin
+    password: password
+    ``` 
+
